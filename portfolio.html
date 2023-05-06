@@ -294,19 +294,12 @@
     </footer>
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button type="button" class="menu-container-toggle js-close-menu">
           <svg
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            class="menu-container-icon"
+            width="8px" height="8px"
           >
-            <path
-              fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
   
@@ -318,47 +311,47 @@
 
         <ul class="mobile-contacts">
             <li>
-                <a href="tel:">+11 (000) 111-11-11</a>
+                <a class="mobile-contacts-tel" href="tel:">+11 (000) 111-11-11</a>
             </li>
             <li>
-                <a href="mailto:">info@devstudio.com</a>
+                <a class="mobile-contacts-email" href="mailto:">info@devstudio.com</a>
             </li>
         </ul>
 
         <!-- Mobile social media -->
-    <div class="media-container">
-        <p class="media-title">Social media</p>
-        <ul class="media-icons list">
-            <li class="media-item">
-                <a class="media-link link" href="https://instagram.com" target="_blank" rel="noreferrer noopener" aria-label="Instagram icon">
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="media-item">
-                <a class="media-link link" href="https://twitter.com" target="_blank" rel="noreferrer noopener" aria-label="Instagram icon">
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-twitter-1"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="media-item">
-                <a class="media-link link" href="https://facebook.com" target="_blank" rel="noreferrer noopener" aria-label="Instagram icon">
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-facebook-1"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="media-item">
-                <a class="media-link link" href="https://linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="Instagram icon">
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-linkedin-1"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </div>   
+        <div class="media-container">
+            <p class="media-title">Social media</p>
+            <ul class="media-icons list">
+                <li class="media-item">
+                    <a class="media-link link" href="https://instagram.com" target="_blank" rel="noreferrer noopener" aria-label="Instagram icon">
+                        <svg class="social-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="media-item">
+                    <a class="media-link link" href="https://twitter.com" target="_blank" rel="noreferrer noopener" aria-label="Instagram icon">
+                        <svg class="social-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="media-item">
+                    <a class="media-link link" href="https://facebook.com" target="_blank" rel="noreferrer noopener" aria-label="Instagram icon">
+                        <svg class="social-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="media-item">
+                    <a class="media-link link" href="https://linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="Instagram icon">
+                        <svg class="social-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>    
     </div>
     <script
       defer
