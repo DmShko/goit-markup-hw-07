@@ -22,7 +22,8 @@
 .img-block{
     /* reset empty space beetwen images */
     display: block;
-    /* max-width: 100%; */
+    max-width: 100%;
+    /* height: auto; */
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -149,7 +150,7 @@ div[class="form-input-icon"]:focus-within,
     margin-left: auto;
     margin-right: auto;
 
-    outline: 2px solid red; 
+    /* outline: 2px solid red;  */
 }
 
 /* Width size of windows 768px +*/
@@ -422,15 +423,22 @@ body {
     /* padding: 0 316px; */
 }
 
-.hero {
-    max-width: 428px;
-    margin: 0 auto;
-    background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 112px 0;
+@media only screen and (min-width: 428px) {
+    .hero {
+        max-width: 428px;
+        margin: 0 auto;
+        background-color: #2E2F42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/hero-images/optimized-1x-2x-img/Dark-bg-428mob@1x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 112px 0;
+    }
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/hero-images/optimized-1x-2x-img/Dark-bg-856mob@2x.jpg);
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -438,11 +446,16 @@ body {
         max-width: 768px;
         margin: 0 auto;
         background-color: #2E2F42;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)) , url(../images/hero-images/optimized-1x-2x-img/Dark-bg-768tab@1x.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         padding: 112px 0;
+    }
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/hero-images/optimized-1x-2x-img/Dark-bg-856mob@2x.jpg);
+        }
     }
 }
 
@@ -451,13 +464,19 @@ body {
         max-width: 1158px;
         margin: 0 auto;
         background-color: #2E2F42;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/hero-images/optimized-1x-2x-img/people-office-1-1440desk@1x.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         padding: 188px 0;
     }
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/hero-images/optimized-1x-2x-img/people-office-1-2880desk@2x.jpg);
+        }
+    }
 }
+
 .hero-title {
     margin-bottom: 72px;
     max-width: 320px;
@@ -801,7 +820,7 @@ body {
 
 @media only screen and (min-width: 1158px) {
     .team-container {
-        padding: 0;
+        padding: 0 15px;
     }
 }
 
